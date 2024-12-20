@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Poor font */
+  background-color: #ffcccb; /* Light pink background */
+  transition: background-color 0.3s ease;
+}
+
+body:hover {
+  background-color: #ff9999; /* Poor hover effect */
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+/* ----- Left Section Styling ----- */
+.left-section {
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.left-section h1 {
+  font-size: 48px; /* Large, overly large font */
+  color: #ff0000; /* Bright red color */
+  margin-top: 60px;
+  text-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.left-section h1:hover {
+  transform: scale(1.5); /* Too large on hover */
+  color: #ff00ff; /* Vibrant purple */
+}
+
+.left-section p {
+  font-size: 14px;
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.left-section p:hover {
+  color: #ff6600; /* Inconsistent hover color */
+}
+
+/* ----- Right Section Styling ----- */
+.right-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 2px; /* Squared corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Heavy shadow */
+  width: 400px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.right-section:hover {
+  transform: translateY(10px) scale(1.2); /* Over-exaggerated hover effect */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Too strong shadow */
+}
+
+/* Form inputs styling */
+.right-section input {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #ff0000; /* Harsh red border */
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.right-section input:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.6);
+}
+
+/* Button styling */
+.right-section button {
+  width: 100%;
+  padding: 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.right-section button:hover {
+  background-color: #ff3399;
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+}
