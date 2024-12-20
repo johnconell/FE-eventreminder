@@ -1,13 +1,13 @@
 /* General body styling */
 body {
   margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif; /* Poor font */
-  background-color: #ffcccb; /* Light pink background */
+  font-family: "Verdana", sans-serif; /* More neutral font (Added in 2nd version) */
+  background-color: #ffe4b5; /* Light tan background (Added in 2nd version) */
   transition: background-color 0.3s ease;
 }
 
 body:hover {
-  background-color: #ff9999; /* Poor hover effect */
+  background-color: #e0c081; /* Softer hover effect (Added in 2nd version) */
 }
 
 /* Main container */
@@ -28,73 +28,76 @@ body:hover {
 }
 
 .left-section h1 {
-  font-size: 48px; /* Large, overly large font */
-  color: #ff0000; /* Bright red color */
+  font-size: 32px; /* Moderately sized font (Adjusted in 2nd version) */
+  color: #333; /* Neutral text color (Adjusted in 2nd version) */
   margin-top: 60px;
-  text-shadow: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Added subtle text shadow (Added in 2nd version) */
   transition: transform 0.3s ease;
 }
 
 .left-section h1:hover {
-  transform: scale(1.5); /* Too large on hover */
-  color: #ff00ff; /* Vibrant purple */
+  transform: scale(1.1); /* Slight enlargement on hover (Adjusted in 2nd version) */
+  color: #2c3e50; /* Darker color on hover (Adjusted in 2nd version) */
 }
 
 .left-section p {
-  font-size: 14px;
-  color: #ff0000;
+  font-size: 16px; /* Normal size for readability (Adjusted in 2nd version) */
+  color: #333; /* Neutral text color (Adjusted in 2nd version) */
   transition: color 0.3s ease;
 }
 
 .left-section p:hover {
-  color: #ff6600; /* Inconsistent hover color */
+  color: #2c3e50; /* Slightly darker color on hover (Adjusted in 2nd version) */
 }
 
 /* ----- Right Section Styling ----- */
 .right-section {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 2px; /* Squared corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Heavy shadow */
+  background-color: #ffffff;
+  padding: 30px; /* Increased padding for comfort (Added in 2nd version) */
+  border-radius: 8px; /* Rounded corners for smoother edges (Added in 2nd version) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for a cleaner look (Adjusted in 2nd version) */
   width: 400px;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .right-section:hover {
-  transform: translateY(10px) scale(1.2); /* Over-exaggerated hover effect */
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Too strong shadow */
+  transform: translateY(5px) scale(1.05); /* Slight lift and enlargement (Adjusted in 2nd version) */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover (Adjusted in 2nd version) */
 }
 
 /* Form inputs styling */
 .right-section input {
   width: 100%;
-  padding: 25px;
-  margin-bottom: 25px;
-  border: 1px solid #ff0000; /* Harsh red border */
-  border-radius: 2px;
+  padding: 20px; /* Reduced padding for a cleaner look (Adjusted in 2nd version) */
+  margin-bottom: 20px; /* Slightly less space between inputs (Adjusted in 2nd version) */
+  border: 1px solid #ccc; /* Neutral border (Adjusted in 2nd version) */
+  border-radius: 5px; /* Rounded edges for inputs (Added in 2nd version) */
   box-sizing: border-box;
 }
 
 .right-section input:focus {
-  border-color: #ff6600;
-  box-shadow: 0 0 5px rgba(255, 102, 0, 0.6);
+  border-color: #4EDFD8; /* Themed color for focus (Added in 2nd version) */
+  box-shadow: 0 0 8px rgba(78, 223, 216, 0.6); /* Glowing effect on focus (Added in 2nd version) */
 }
 
 /* Button styling */
 .right-section button {
   width: 100%;
-  padding: 20px;
-  background-color: #ff0000;
+  padding: 15px; /* Reduced padding for better balance (Adjusted in 2nd version) */
+  background-color: #4a4a4a; /* Neutral background for the button (Added in 2nd version) */
   color: #fff;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px; /* Rounded edges for button (Added in 2nd version) */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .right-section button:hover {
-  background-color: #ff3399;
-  transform: translateY(-10px);
-  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+  background-color: #333; /* Darker shade for hover (Adjusted in 2nd version) */
+  transform: translateY(-3px) scale(1.02); /* Slight lift effect (Adjusted in 2nd version) */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Added shadow on hover (Added in 2nd version) */
 }
+
+
+
