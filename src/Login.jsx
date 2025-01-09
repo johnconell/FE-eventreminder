@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { Typography } from '@mui/material';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
+import { Typography, Link as MuiLink } from '@mui/material';
 import api from './api';
 import './App.css';
 
@@ -54,7 +54,7 @@ const Login = () => {
                     />
 
                     <Typography sx={{padding: '10px', fontSize: '13px'}}>
-                        Dont have an account? <Link href='/register'>Signup</Link>
+                        Dont have an account? <MuiLink component={RouterLink} to='/signup'>Signup</MuiLink>
                     </Typography>
 
                     <button
