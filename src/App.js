@@ -1,15 +1,20 @@
 import React from 'react';
-import { Router, Switch, Link } from 'react-router-dom'; // Importing wrong components
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Login';
 import UserList from './UserList';
+import PrivateRoute from './PrivateRoute';
 
 function App() {
     return (
         <Router>
-            <Switch> {/* Using 'Switch' instead of 'Routes' */}
-                <Route path="/" component={Login}
-                <Route path="/users" component={UserList} 
-            </Switch>
+            <Routes> 
+                <Route path="/" element={<Login/>} />
+                <Route path="/users" element={
+                    <PrivateRoute>
+                        <UserList />
+                    </PrivateRoute>
+                } />
+            </Routes>
         </Router>
     );
 }

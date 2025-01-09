@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { Typography } from '@mui/material';
 import api from './api';
 import './App.css';
 
@@ -51,6 +52,11 @@ const Login = () => {
                         className={isInvalid ? 'invalid' : ''}
                         style={{ width: '100%', padding: '10px', border: '1px solid red' }}
                     />
+
+                    <Typography sx={{padding: '10px', fontSize: '13px'}}>
+                        Dont have an account? <Link href='/register'>Signup</Link>
+                    </Typography>
+
                     <button
                         type="submit"
                         style={{ width: '100%', padding: '10px', backgroundColor: 'blue', color: 'white' }}
