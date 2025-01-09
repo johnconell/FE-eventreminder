@@ -2,7 +2,8 @@ import React, { useState, useCallback } from 'react';
 import { Box, Paper, TextField, Button, Typography, Snackbar, Alert, IconButton, InputAdornment, Backdrop, CircularProgress } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import api from './services/api';
+import './fonts/fonts.css';
+import api from './api';
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -91,8 +92,8 @@ const Signup = () => {
             <Paper elevation={10} sx={{ padding: '30px', width: '390px' }}>
                 <form style={{ display: 'flex', flexDirection: 'column' }} onSubmit={handleSubmit}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                        <Typography sx={{ fontFamily: 'Serif-Regular', fontSize: '30px' }}>Register</Typography>
-                        <Typography sx={{ marginRight: '20px', fontFamily: 'HostGrotesk-SemiBold', color: '#db8009' }}>Atlas Hotel</Typography>
+                        <Typography sx={{ fontFamily: 'Poppins-Bold', fontSize: '30px' }}>Sign up</Typography>
+                        <Typography sx={{ marginRight: '20px', fontFamily: 'HostGrotesk-SemiBold', color: '#a8326d' }}>Event Reminder</Typography>
                     </Box>
 
                     <TextField 
@@ -162,8 +163,8 @@ const Signup = () => {
                         }}
                     />
 
-                    <Typography sx={{ fontSize: '13px', marginBottom: '10px', color: '#616060' }}>
-                        By completing your registration, you agree to adhere to Atlas Hotel's policies.
+                    <Typography sx={{ fontSize: '13px', color: '#616060', padding: '10px'}}>
+                        By completing your registration, you agree to adhere to Event Reminder's policies.
                     </Typography>
 
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
@@ -172,7 +173,7 @@ const Signup = () => {
                         </Alert>
                     </Snackbar>
 
-                    <Button type="submit" size='large' variant='contained' sx={{ backgroundColor: '#ff9100' }}>REGISTER</Button>
+                    <Button type="submit" size='large' variant='contained' sx={{ backgroundColor: '#a8326d' }}>REGISTER</Button>
                 </form>
             </Paper>
         </Box>
